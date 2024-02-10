@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --green: #198754;
+  --light: #f8f9fa;
+  --dark: #2b3035;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::placeholder {
+  text-transform: capitalize;
+  color: #2b30357c!important;
 }
+
+body {
+  background-color: var(--green);
+  font-family: "Outfit", sans-serif;
+}
+
+.fs-lg {
+  font-size: 5rem;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.divider {
+  height: 3px;
+  width: 100px;
+}
+
+.socials a {
+  width: 35px;
+  height: 35px;
+  transition: all 0.2s;
+  color: var(--light) !important;
+}
+
+.nav-link:hover,
+.active {
+  background-color: var(--green);
+}
+
+.socials a:hover {
+  background-color: var(--light);
+  color: var(--dark) !important;
+}
+
+form input {
+  border-bottom: 1px solid #2b303527 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+
+.form-control:focus {
+  border-color: #2b303527;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #19875444;
+}
+
+.bg-opacity-90 {
+  opacity: 0.9;
+}
+
+.overlay {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.port:hover .overlay {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#avatar {
+  width: 20vw;
+}
+
+#navbarCollapse {
+  transition: all 0.4s;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px var(--dark);
+  border-radius: 10px;
+  background-color: var(--dark);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px var(--dark);
+  background-color: var(--green);
+}
+/************************************/
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 13px;
+  }
+}
+/************************************/
