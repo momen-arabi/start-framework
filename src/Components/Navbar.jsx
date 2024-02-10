@@ -12,7 +12,7 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
         <div className="container">
-          <Link className="navbar-brand fs-2 fw-bolder text-uppercase" to={"/"}>
+          <Link className="navbar-brand fs-2 fw-bolder text-uppercase" to={""}>
             My Portfolio
           </Link>
           <button
@@ -32,7 +32,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <NavLink
                   className="nav-NavLink nav-link text-decoration-none fw-bold py-2 px-3 rounded-3 me-lg-3 text-light text-uppercase"
-                  to={"/about"}
+                  to={"about"}
                 >
                   About
                 </NavLink>
@@ -40,13 +40,13 @@ export default function Navbar() {
               <li className="nav-item">
                 <NavLink
                   className="nav-NavLink nav-link text-decoration-none fw-bold py-2 px-3 rounded-3 me-lg-3 text-light text-uppercase"
-                  to={"/portfolio"}
+                  to={"portfolio"}
                 >
                   Portfolio
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-NavLink nav-link text-decoration-none fw-bold py-2 px-3 rounded-3 text-light text-uppercase" to={"/contact"}>
+                <NavLink className="nav-NavLink nav-link text-decoration-none fw-bold py-2 px-3 rounded-3 text-light text-uppercase" to={"contact"}>
                   Contact
                 </NavLink>
               </li>

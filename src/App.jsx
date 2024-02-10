@@ -12,14 +12,14 @@ import Layout from "./Components/Layout";
 function App() {
   const routes = createBrowserRouter([
     {
-      path: "/",
+      path: "",
       element: <Layout />,
       children: [
         { path: "", element: <Home /> },
-        { path: "/home", element: <Navigate to={"/"} /> },
-        { path: "/about", element: <About /> },
-        { path: "/portfolio", element: <Porfolio /> },
-        { path: "/contact", element: <Contact /> },
+        { path: "home", element: <Navigate to={""} /> },
+        { path: "about", element: <About /> },
+        { path: "portfolio", element: <Porfolio /> },
+        { path: "contact", element: <Contact /> },
       ],
     },
   ]);
