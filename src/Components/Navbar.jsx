@@ -12,7 +12,7 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
         <div className="container">
-          <Link className="navbar-brand fs-2 fw-bolder text-uppercase" to={""}>
+          <Link className="navbar-brand fs-2 fw-bolder text-uppercase" to={"/"}>
             My Portfolio
           </Link>
           <button
